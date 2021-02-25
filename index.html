@@ -14,7 +14,8 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -27,6 +28,12 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
   <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"
+    integrity="sha512-UwcC/iaz5ziHX7V6LjSKaXgCuRRqbTp1QHpbOJ4l1nw2/boCfZ2KlFIqBUA/uRVF0onbREnY9do8rM/uT/ilqw=="
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -44,16 +51,8 @@
               <li class="active"><a href="index.html">Home</a></li>
               <li><a href="#featured-services">About Us</a></li>
               <li><a href="#testimonials">Testimonials</a></li>
-              <li class="drop-down"><a href="#about">Services</a>
-                <ul>
-                  <li><a href="#">Mixing</a></li>
-                  <li><a href="#">Mastering</a></li>
-                  <li><a href="#">Mixing & Mastering</a></li>
-                  <li><a href="#">Voice Tags</a></li>
-                  <li><a href="#">Audio Editing</a></li>
-                </ul>
-              </li>
-              <li><a href="#facts">Examples</a></li>              
+              <li><a href="#about">Services</a></li>
+              <li><a href="#facts">Examples</a></li>
               <li><a href="#contact">Contact Us</a></li>
             </ul>
           </nav>
@@ -67,7 +66,14 @@
 
   <!-- ======= Intro Section ======= -->
   <section id="intro">
-    <div class="w-100 h-100" style="background-image: url(assets/img/screensaver.png); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
+    <div class="w-100 h-100 d-block d-md-none"
+      style="background-image: url(assets/img/screensaver.png); background-size: cover; background-position: center; background-repeat: no-repeat;">
+    </div>
+    <div class="d-none d-md-block" id="hero">
+      <video playsinline autoplay muted loop poster="assets/img/screensaver.png" id="bgvideo" width="x" height="y">
+        <source src="assets/vid/hero.mp4" type="video/mp4">
+      </video>
+    </div>
   </section>
   <!-- End Intro Section -->
 
@@ -77,185 +83,203 @@
     <section id="featured-services">
       <div class="container">
         <div class="row py-5">
-          <div class="col-lg-12">
-            <h2 class="title text-center text-white">Welcome to Top Shelf Audio</h2>
+          <div class="col-12">
+            <header class="section-header">
+              <h3>Welcome to Top Shelf Audio
+              </h3>
+            </header>
+          </div>
+          <div class="row align-items-center justify-content-center">
+            <div class="col-12 col-lg-8 box">
+              <p class="description text-center text-md-left">We provide professional quality audio services with an
+                added focus on building relationships with our clients and helping you to achieve the sonic success that
+                your music deserves.
+                <br><br>
+                Our highly skilled team of engineers will enhance your music and bring it to life, giving it the
+                finishing touch that it needs. Your music will be loud, clear and ready for release.
+                <br><br>
+                Catering for all genres and styles, our engineers have the skills and experience to bring the best out
+                of your tracks and give your music the professional sound it requires.
+              </p>
+            </div>
+
+            <div class="col-12 col-lg-4 box">
+              <img class="img-fluid shadow-lg" src="assets/img/welcome.jpg" />
+            </div>
           </div>
 
-          <div class="col-lg-4 box">
-            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-
-          <div class="col-lg-4 box">
-            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-
-          <div class="col-lg-4 box">
-            <img class="img-fluid" src="assets/img/welcome.jpg"/>
-          </div>
 
         </div>
       </div>
     </section>
     <!-- End About Us Section -->
 
-        <!-- ======= Testimonials Section ======= -->
-        <section id="testimonials" class="section-bg">
-          <div class="container" data-aos="fade-up">
-    
-            <header class="section-header">
-              <h3>Testimonials</h3>
-            </header>
-    
-            <div class="owl-carousel testimonials-carousel">
-    
-              <div class="testimonial-item">
-                <img src="assets/img/testimonial-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-                <p>
-                  <img src="assets/img/quote-sign-left.png" class="quote-sign-left" alt="">
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                  <img src="assets/img/quote-sign-right.png" class="quote-sign-right" alt="">
-                </p>
-              </div>
-    
-              <div class="testimonial-item">
-                <img src="assets/img/testimonial-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-                <p>
-                  <img src="assets/img/quote-sign-left.png" class="quote-sign-left" alt="">
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                  <img src="assets/img/quote-sign-right.png" class="quote-sign-right" alt="">
-                </p>
-              </div>
-    
-              <div class="testimonial-item">
-                <img src="assets/img/testimonial-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-                <p>
-                  <img src="assets/img/quote-sign-left.png" class="quote-sign-left" alt="">
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                  <img src="assets/img/quote-sign-right.png" class="quote-sign-right" alt="">
-                </p>
-              </div>
-    
-              <div class="testimonial-item">
-                <img src="assets/img/testimonial-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-                <p>
-                  <img src="assets/img/quote-sign-left.png" class="quote-sign-left" alt="">
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                  <img src="assets/img/quote-sign-right.png" class="quote-sign-right" alt="">
-                </p>
-              </div>
-    
-              <div class="testimonial-item">
-                <img src="assets/img/testimonial-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-                <p>
-                  <img src="assets/img/quote-sign-left.png" class="quote-sign-left" alt="">
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                  <img src="assets/img/quote-sign-right.png" class="quote-sign-right" alt="">
-                </p>
-              </div>
-    
-            </div>
-    
-          </div>
-        </section>
-        <!-- End Testimonials Section -->
-
-    <!-- ======= Services Section ======= -->
-    <section id="about">
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="section-bg">
       <div class="container" data-aos="fade-up">
+        <div class="owl-carousel testimonials-carousel">
 
-        <header class="section-header">
-          <h3>Services</h3>
-        </header>
-
-        <div class="row about-cols">
-
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-            <a href="mixingmastering.html">
-              <div class="about-col">
-                <div class="img">
-                  <img src="assets/img/about-mission.jpg" alt="" class="img-fluid">
-                  <div class="icon"><i class="ion-ios-color-wand-outline"></i></div>
-                </div>
-                <h2 class="title"><a href="mixingmastering.html">Mixing & Mastering</a></h2>
-              </div>
-            </a>
+          <div class="testimonial-item">
+            <img src="assets/img/Skilliam.jpg" class="testimonial-img" alt="">
+            <h3>Skilliam</h3>
+            <h4>Butterz</h4>
+            <p>
+              <img src="assets/img/quote-sign-left.png" class="quote-sign-left" alt="">
+              Good mix and masters with fast turnaround times
+              <img src="assets/img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
           </div>
 
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-            <a href="mixing.html">
-              <div class="about-col">
-                <div class="img">
-                  <img src="assets/img/about-plan.jpg" alt="" class="img-fluid">
-                  <div class="icon"><i class="ion-scissors"></i></div>
-                </div>
-                <h2 class="title"><a href="mixing.html">Mixing</a></h2>
-              </div>
-            </a>
+          <div class="testimonial-item">
+            <img src="assets/img/Sammy Virji.jpg" class="testimonial-img" alt="">
+            <h3>Sammy Virji</h3>
+            <h4>Kiwi Records</h4>
+            <p>
+              <img src="assets/img/quote-sign-left.png" class="quote-sign-left" alt="">
+              TSA are my go to for mastering. Tracks are the perfect loudness whilst maintaining dynamics and overall
+              sound quality. All my self released music is mastered by Top Shelf. Quick turnaround and amazing value for
+              money, they will always be my go to mastering service!’
+              <img src="assets/img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
           </div>
 
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-            <a href="mastering.html">
-              <div class="about-col">
-                <div class="img">
-                  <img src="assets/img/about-vision.jpg" alt="" class="img-fluid">
-                  <div class="icon"><i class="ion-android-options"></i></div>
-                </div>
-                <h2 class="title"><a href="mastering.html">Mastering</a></h2>
-              </div>
-            </a>
+          <div class="testimonial-item">
+            <img src="assets/img/Roska.jpg" class="testimonial-img" alt="">
+            <h3>Roska</h3>
+            <h4>RKS</h4>
+            <p>
+              <img src="assets/img/quote-sign-left.png" class="quote-sign-left" alt="">
+              Used on a few occasions and the service has been rapid. Professional and great sounding masters.
+              <img src="assets/img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="assets/img/Flava D.jpg" class="testimonial-img" alt="">
+            <h3>Flava D</h3>
+            <h4>Butterz/Night Bass</h4>
+            <p>
+              <img src="assets/img/quote-sign-left.png" class="quote-sign-left" alt="">
+              A great mastering service with a quick turnaround to give your tracks that professional finish.
+              <img src="assets/img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="assets/img/Chimpo.jpg" class="testimonial-img" alt="">
+            <h3>Chimpo</h3>
+            <h4>Box n Lock</h4>
+            <p>
+              <img src="assets/img/quote-sign-left.png" class="quote-sign-left" alt="">
+              Top Shelf Audio did a top job mixing and mastering our track. The turnaround was quick and the finished
+              product sounded wicked
+              <img src="assets/img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
           </div>
 
         </div>
 
-        <div class="row about-cols justify-content-center">
+      </div>
+    </section>
+    <!-- End Testimonials Section -->
 
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-            <a href="voicetags.html">
-              <div class="about-col">
-                <div class="img">
-                  <img src="assets/img/about-mission.jpg" alt="" class="img-fluid">
-                  <div class="icon"><i class="ion-ios-mic"></i></div>
+    <!-- ======= Services Section ======= -->
+    <section id="about">
+      <div class="container" data-aos="fade-up">
+        <div class="container" data-aos="fade-up">
+          <div class="row">
+            <div class="col-12">
+              <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                        href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Mixing
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                      <p class="text-center text-md-left">We take the stems from your track and balance the levels,
+                        bringing the best out of each sound and making sure everything has its own space in the mix.
+                        <br><br>Using specialized tools and years of experience our engineers will ensure your track
+                        sounds professional and ready to be mastered.</p>
+                    </div>
+                  </div>
                 </div>
-                <h2 class="title"><a href="voicetags.html">Voice Tags</a></h2>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-            <a href="audioediting.html">
-              <div class="about-col">
-                <div class="img">
-                  <img src="assets/img/about-plan.jpg" alt="" class="img-fluid">
-                  <div class="icon"><i class="ion-edit"></i></div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingTwo">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                        href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Mastering
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div class="panel-body">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nisl lorem, dictum id
+                        pellentesque at, vestibulum ut arcu. Curabitur erat libero, egestas eu tincidunt ac, rutrum ac
+                        justo. Vivamus condimentum laoreet lectus, blandit posuere tortor aliquam vitae. Curabitur
+                        molestie eros. </p>
+                    </div>
+                  </div>
                 </div>
-                <h2 class="title"><a href="audioediting.html">Audio Editing</a></h2>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingThree">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                        href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Audio Editing
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
+                    aria-labelledby="headingThree">
+                    <div class="panel-body">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nisl lorem, dictum id
+                        pellentesque at, vestibulum ut arcu. Curabitur erat libero, egestas eu tincidunt ac, rutrum ac
+                        justo. Vivamus condimentum laoreet lectus, blandit posuere tortor aliquam vitae. Curabitur
+                        molestie eros. </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingFour">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                        href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                        Voice Tags
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                    <div class="panel-body">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nisl lorem, dictum id
+                        pellentesque at, vestibulum ut arcu. Curabitur erat libero, egestas eu tincidunt ac, rutrum ac
+                        justo. Vivamus condimentum laoreet lectus, blandit posuere tortor aliquam vitae. Curabitur
+                        molestie eros. </p>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </a>
+            </div>
           </div>
-
         </div>
 
       </div>
     </section><!-- End Services Section -->
 
     <!-- ======= Call To Action Section ======= -->
-    <section id="call-to-action">
+    <!-- <section id="call-to-action">
       <div class="container text-center" data-aos="zoom-in">
         <h3>Get In Touch</h3>
         <p>Hit us up and lets get this show on the road</p>
         <a class="cta-btn" href="#contact">Get In Touch</a>
       </div>
-    </section><!-- End Call To Action Section -->
+    </section> -->
+    <!-- End Call To Action Section -->
 
     <!-- ======= Facts Section ======= -->
     <section id="facts">
@@ -265,31 +289,21 @@
           <h3>Before & After</h3>
         </header>
 
-        <div class="row counters">
+        <div class="row align-content-center justify-content-center counters">
+          <!--Embed Soundcloud-->
+          <div class="col-10 mb-5">
+            <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1217194429&color=%2318d26e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+            <div
+              style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+              <a href="https://soundcloud.com/user-410755149-74972347" title="Top Shelf Audio" target="_blank"
+                style="color: #cccccc; text-decoration: none;">Top Shelf Audio</a> · <a
+                href="https://soundcloud.com/user-410755149-74972347/sets/before-after" title="Before &amp; After"
+                target="_blank" style="color: #cccccc; text-decoration: none;">Before &amp; After</a></div>
 
-          <div class="col-12 text-center">
-            <div class="container">
-              <div class="column add-bottom">
-                  <div id="mainwrap">
-                      <div id="nowPlay">
-                          <span id="npAction">Paused...</span><span id="npTitle"></span>
-                      </div>
-                      <div id="audiowrap">
-                          <div id="audio0">
-                              <audio id="audio1" preload controls>Your browser does not support HTML5 Audio! 😢</audio>
-                          </div>
-                          <div id="tracks">
-                              <a id="btnPrev">&vltri;</a><a id="btnNext">&vrtri;</a>
-                          </div>
-                      </div>
-                      <div id="plwrap">
-                          <ul id="plList"></ul>
-                      </div>
-                  </div>
-              </div>
-           </div>
           </div>
         </div>
+      </div>
       </div>
     </section><!-- End Facts Section -->
 
@@ -297,30 +311,21 @@
     <section id="contact">
       <div class="container" data-aos="fade-up">
 
-        <div class="section-header">
+        <div class="section-header pb-4">
           <h3>Contact Us</h3>
-          <p>Get in touch for some sick beatzzzz</p>
         </div>
 
         <div class="row contact-info">
 
-          <div class="col-md-4">
-            <div class="contact-address">
-              <i class="ion-ios-location-outline"></i>
-              <h3>Address</h3>
-              <address>28 Hale Street, Sheffield, S8 0YE</address>
-            </div>
-          </div>
-
-          <div class="col-md-4">
+          <div class="col-md-6">
             <div class="contact-phone">
               <i class="ion-ios-telephone-outline"></i>
               <h3>Phone Number</h3>
-              <p><a href="tel:+447442342723">+44 7442 342 723</a></p>
+              <p><a href="tel:+44777777777">+44 7777 777 777</a></p>
             </div>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-6">
             <div class="contact-email">
               <i class="ion-ios-email-outline"></i>
               <h3>Email</h3>
@@ -334,20 +339,24 @@
           <form action="forms/contact.php" method="post" role="form" class="php-email-form">
             <div class="form-row">
               <div class="form-group col-md-6">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                  data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                 <div class="validate"></div>
               </div>
               <div class="form-group col-md-6">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                  data-rule="email" data-msg="Please enter a valid email" />
                 <div class="validate"></div>
               </div>
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
               <div class="validate"></div>
             </div>
             <div class="form-group">
-              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+              <textarea class="form-control" name="message" rows="5" data-rule="required"
+                data-msg="Please write something for us" placeholder="Message"></textarea>
               <div class="validate"></div>
             </div>
             <div class="mb-3">
@@ -389,19 +398,15 @@
           <div class="col-lg-3 col-md-6 footer-contact">
             <h4>Contact Us</h4>
             <p>
-              28 Hale Street<br>
-              Sheffield<br>
-              S8 0YE<br>
-              <strong>Phone:</strong> +44 7442 342 723<br>
+              <strong>Phone:</strong> +44 7777 777 777<br>
               <strong>Email:</strong> info@topshelfaudio.uk<br>
             </p>
 
             <div class="social-links">
-              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+              <a href="https://twitter.com/top_shelf_audio" class="twitter"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.facebook.com/TSAWorldwide" class="facebook"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.instagram.com/top.shelf.audio/" class="instagram"><i
+                  class="fab fa-instagram"></i></a>
             </div>
 
           </div>
