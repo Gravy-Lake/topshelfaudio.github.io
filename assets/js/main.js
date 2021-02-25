@@ -1,9 +1,3 @@
-/**
-* Template Name: BizPage - v3.1.1
-* Template URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 (function($) {
   "use strict";
 
@@ -244,8 +238,6 @@
   });
 
 })(jQuery);
-
-// Mythium Archive: https://archive.org/details/mythium/
 
 jQuery(function ($) {
   'use strict'
